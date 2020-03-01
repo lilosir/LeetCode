@@ -36,6 +36,7 @@ func dive() error {
 }
 
 func main() {
-	result := ExecuteAllMiddlewares([]func() error{add, minus, multiply, dive})
-	fmt.Println(result)
+	// result := ExecuteAllMiddlewares([]func() error{add, minus, multiply, dive})
+	str := "12hello"
+	fmt.Println(string(str[1] * 2))
 }
