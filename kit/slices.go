@@ -1,4 +1,4 @@
-package util
+package kit
 
 func compareTwoSlice(a, b []int) bool {
 	if len(a) != len(b) {

@@ -2,7 +2,6 @@ package problem1304
 
 import (
 	"testing"
-  "github.com/lilosir/LeetCode/util"
 )
 
 type testUnit struct {
@@ -31,7 +30,7 @@ func TestSumZero(t *testing.T) {
 	}
 
 	for _, tt := range table {
-		if actual := sumZero(tt.input); !util.compareTwoSlice(actual, tt.output) {
+		if actual := sumZero(tt.input); !myutil.compareTwoSlice(actual, tt.output) {
 			t.Errorf("sumZero(%dd) expect %v, but got %v", tt.input, tt.output, actual)
 		}
 	}
