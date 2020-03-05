@@ -35,9 +35,18 @@ func dive() error {
 	return nil
 }
 
+func mapTest() map[string]int {
+	m := make(map[string]int)
+	m["1"] = 1
+	m["2"] = 2
+	m["2"] = 3
+
+	return m
+}
+
 func main() {
 	// result := ExecuteAllMiddlewares([]func() error{add, minus, multiply, dive})
 	// str := "12hello"
 	// fmt.Println(string(str[1] * 2))
-	fmt.Println(3 / 2)
+	fmt.Println(mapTest())
 }
