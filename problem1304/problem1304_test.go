@@ -35,7 +35,7 @@ func TestSumZero(t *testing.T) {
 
 	for _, tt := range table {
 		if actual := sumZero(tt.input); !compareTwoSlice(actual, tt.output) {
-			t.Errorf("sumZero(%dd) expect %v, but got %v", tt.input, tt.output, actual)
+			t.Errorf("sumZero(%d) expect %v, but got %v", tt.input, tt.output, actual)
 		}
 	}
 }
