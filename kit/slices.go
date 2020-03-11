@@ -1,6 +1,7 @@
 package kit
 
-func compareTwoSlice(a, b []int) bool {
+// CompareTwoSlice return two sclices are same
+func CompareTwoSlice(a, b []int) bool {
 	if len(a) != len(b) {
 		return false
 	}

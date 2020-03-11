@@ -3,8 +3,6 @@ package main
 import (
 	"errors"
 	"fmt"
-
-	"github.com/lilosir/LeetCode/problem1365"
 )
 
 // ExecuteAllMiddlewares middleware
@@ -48,5 +46,5 @@ func mapTest() map[string]int {
 
 func main() {
 	// result := ExecuteAllMiddlewares([]func() error{add, minus, multiply, dive})
-	problem1365.SmallerNumbersThanCurrent([]int{5, 1, 2, 5})
+	fmt.Println(123 / 10)
 }
