@@ -46,5 +46,4 @@ func mapTest() map[string]int {
 
 func main() {
 	// result := ExecuteAllMiddlewares([]func() error{add, minus, multiply, dive})
-	fmt.Println(123 / 10)
 }
