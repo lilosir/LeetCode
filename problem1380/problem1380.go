@@ -25,7 +25,6 @@ func luckyNumbers(matrix [][]int) []int {
 				j = k
 			}
 		}
-		maxMap[i] = j
 
 		if v, ok := minMap[j]; ok && v == i {
 			result = append(result, matrix[j][i])

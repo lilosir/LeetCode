@@ -10,7 +10,7 @@ type testUnit struct {
 func TestArrayPairSum(t *testing.T) {
 	table := []testUnit{
 		{
-			[]int{1,4,3,2}, 
+			[]int{1, 4, 3, 2},
 			4,
 		},
 	}
