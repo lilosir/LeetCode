@@ -46,4 +46,7 @@ func mapTest() map[string]int {
 
 func main() {
 	// result := ExecuteAllMiddlewares([]func() error{add, minus, multiply, dive})
+	// a := []string{"1", "2", "4", "3"}
+	// b := []string{"1", "2", "4", "3"}
+	// fmt.Println(kit.CheckTwoSliceHaveSameStringElements(a, b))
 }
