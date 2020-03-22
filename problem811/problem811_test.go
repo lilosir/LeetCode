@@ -41,7 +41,16 @@ func TestSubdomainVisits(t *testing.T) {
 	}
 
 	for _, tt := range table {
-		if actual := subdomainVisits(tt.input); !kit.CheckTwoSliceHaveSameStringElements(actual, tt.output) {
+		actual := subdomainVisits(tt.input)
+		actualInterface := make([]interface{}, len(actual))
+		for _, v := range actual {
+			actualInterface = append(actualInterface, v)
+		}
+		outputInterface := make([]interface{}, len(tt.output))
+		for _, v := range tt.output {
+			outputInterface = append(outputInterface, v)
+		}
+		if !kit.CheckTwoSliceHaveSameElements(actualInterface, outputInterface) {
 			t.Errorf("subdomainVisits(%v) expects %v, but got %v", tt.input, tt.output, actual)
 		}
 	}

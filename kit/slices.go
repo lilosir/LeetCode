@@ -13,12 +13,12 @@ func CompareTwoSlice(a, b []int) bool {
 	return true
 }
 
-// CheckTwoSliceHaveSameStringElements return true if they have same elements--- type string
-func CheckTwoSliceHaveSameStringElements(a, b []string) bool {
+// CheckTwoSliceHaveSameElements return true if they have same elements
+func CheckTwoSliceHaveSameElements(a, b []interface{}) bool {
 	if len(a) != len(b) {
 		return false
 	}
-	valMap := make(map[string]int)
+	valMap := make(map[interface{}]int)
 
 	for _, v := range a {
 		valMap[v]++

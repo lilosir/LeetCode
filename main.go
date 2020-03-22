@@ -3,6 +3,8 @@ package main
 import (
 	"errors"
 	"fmt"
+
+	"github.com/lilosir/LeetCode/kit"
 )
 
 // ExecuteAllMiddlewares middleware
@@ -46,7 +48,15 @@ func mapTest() map[string]int {
 
 func main() {
 	// result := ExecuteAllMiddlewares([]func() error{add, minus, multiply, dive})
-	// a := []string{"1", "2", "4", "3"}
-	// b := []string{"1", "2", "4", "3"}
-	// fmt.Println(kit.CheckTwoSliceHaveSameStringElements(a, b))
+	a := []int{1, 10, 5, 6, 7, 8}
+	b := []int{10, 1, 6, 5, 8, 7}
+	aInterface := make([]interface{}, len(a))
+	for _, v := range a {
+		aInterface = append(aInterface, v)
+	}
+	bInterface := make([]interface{}, len(b))
+	for _, v := range b {
+		bInterface = append(bInterface, v)
+	}
+	fmt.Println(kit.CheckTwoSliceHaveSameIntElements(aInterface, bInterface))
 }
