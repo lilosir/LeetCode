@@ -26,6 +26,18 @@ func CompareTwoStringSlice(a, b []string) bool {
 	return true
 }
 
+func CompareTwoByteSlice(a, b []byte) bool {
+	if len(a) != len(b) {
+		return false
+	}
+	for i, v := range a {
+		if v != b[i] {
+			return false
+		}
+	}
+	return true
+}
+
 // CheckTwoSliceHaveSameElements return true if they have same elements
 func CheckTwoSliceHaveSameElements(a, b []interface{}) bool {
 	if len(a) != len(b) {
